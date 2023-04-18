@@ -1,8 +1,10 @@
 # Nihilent Assignments
 
-# Build UI and logic using SwiftUI and Swift
+# Use Xcode 14.2 
 
 # Minimum deployment target iOS 14.0
+
+# Build UI and logic using SwiftUI and Swift
 
 # Api call async / await
 
