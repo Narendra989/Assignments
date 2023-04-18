@@ -1,10 +1,8 @@
-# Assignments
+# Nihilent Assignments
 
-# Third Part Library
+# Build UI and logic using SwiftUI and Swift
 
-1. Alamofire - Fetch data from server 
-2. Alamofire Object Mapper - Encoding and Decoding data
-3. Alamofire Image - Show image from URL and Image caching 
+# Api call async / await
 
 # Design Pattern 
 
@@ -12,5 +10,8 @@
 
 # Unit test cases 
 
- Not handle now, Need more functionality to write test cases  
+1. RequestHandlerTests
+2. FetchDataServiceTests
+3. ProductListViewModelTests
+4. ProductDataViewModelTests
 
