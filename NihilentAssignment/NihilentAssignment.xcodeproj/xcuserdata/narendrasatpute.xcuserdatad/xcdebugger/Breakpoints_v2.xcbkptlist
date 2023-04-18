@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FD16D6F7-1F91-4BB1-A393-7217EB2DC68A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D42E8F6-99CC-4C26-B424-D9451EBEFB6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NihilentAssignment/ProductListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchProducts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NihilentAssignmentTests/ProductListViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchProducts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - ce7d786ceef68a3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - 27a6dcbc0e74ded4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - bb31396b8859ce3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - e2beb12f7c105016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NihilentAssignment.Product) -&gt; NihilentAssignment.ProductDataViewModel in closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - ce7d786ceef68a7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - 27a6dcbc0e74de96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - bb31396b8859ce7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - e2beb12f7c105054"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NihilentAssignment.Product) -&gt; NihilentAssignment.ProductDataViewModel in closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
