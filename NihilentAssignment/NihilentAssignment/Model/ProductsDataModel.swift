@@ -9,18 +9,18 @@ import Foundation
 
 // MARK: - Welcome
 struct ProductResponse: Decodable {
-    let products: [Product]
+    let products: [Product]?
 }
 
 // MARK: - Product
 struct Product: Decodable, Identifiable {
     let citrusID: String?
-    let title, id: String
-    let imageURL: String
-    let price: [Price]
+    let title, id: String?
+    let imageURL: String?
+    let price: [Price]?
     let brand: String?
     let badges: [String]?
-    let ratingCount: Double
+    let ratingCount: Double?
     let messages: Messages?
     let isAddToCartEnable: Bool?
     let addToCartButtonText: AddToCartButtonText?
@@ -46,7 +46,7 @@ enum AddToCartButtonText: String, Decodable {
 // MARK: - Messages
 struct Messages: Decodable {
     let secondaryMessage: String?
-    let sash: Sash
+    let sash: Sash?
     let promotionalMessage: String?
 }
 
@@ -57,8 +57,8 @@ struct Sash: Decodable {
 // MARK: - Price
 struct Price: Decodable {
     let message: Message?
-    let value: Double
-    let isOfferPrice: Bool
+    let value: Double?
+    let isOfferPrice: Bool?
 }
 
 enum Message: String, Decodable {
@@ -68,10 +68,10 @@ enum Message: String, Decodable {
 
 // MARK: - PurchaseTypeElement
 struct PurchaseTypeElement: Decodable {
-    let purchaseType: PurchaseTypeEnum
-    let displayName: DisplayName
-    let unitPrice: Double
-    let minQtyLimit, maxQtyLimit, cartQty: Int
+    let purchaseType: PurchaseTypeEnum?
+    let displayName: DisplayName?
+    let unitPrice: Double?
+    let minQtyLimit, maxQtyLimit, cartQty: Int?
 }
 
 enum DisplayName: String, Decodable {

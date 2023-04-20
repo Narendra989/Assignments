@@ -23,13 +23,13 @@ class ProductListViewModel: ObservableObject {
             let response = await service.fetchProductData()
             DispatchQueue.main.async {
                 if let productList = response?.products {
-                    self.products =  productList.map { ProductDataViewModel(with: $0) }
+                    self.products = productList.compactMap { ProductDataViewModel(with: $0) }
                 } 
             }
         }
     }
     
     func loadImage(imagePath: String) async -> UIImage {
-        return await service.loadImage(from: imagePath) ?? UIImage(named: "no_Image")!
+        return await service.loadImage(from: imagePath) ?? UIImage(named: "no_Image") ?? UIImage()
     }
 }

@@ -42,7 +42,7 @@ class MockProductListViewModel: ProductListViewModel {
     
     override func fetchProducts()  {
         Task {
-            self.products = await (mockService.fetchProductData()?.products.map { ProductDataViewModel(with: $0) })!
+            self.products = await (mockService.fetchProductData()?.products?.compactMap { ProductDataViewModel(with: $0) })!
         }
     }
 }

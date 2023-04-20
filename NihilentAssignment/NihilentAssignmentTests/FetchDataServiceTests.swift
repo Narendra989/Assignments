@@ -23,9 +23,9 @@ class FetchDataServiceTests: XCTestCase {
     func testfetchProductData() async throws {
         let response = await sut.fetchProductData()
         XCTAssertNotNil(response)
-        XCTAssertTrue((response?.products.count)! > 0)
+        XCTAssertTrue((response?.products?.count)! > 0)
         
-        let product = response?.products.first
+        let product = response?.products?.first
         
         XCTAssertNotNil(product)
         XCTAssertEqual(product?.title, "Diamond Label Shiraz")
@@ -37,6 +37,9 @@ class FetchDataServiceTests: XCTestCase {
 
 
 class MockFetchProductDataService: FetchProductDataServiceProtocol {
+    func loadImage(from imagePath: String) async -> UIImage? {
+        return UIImage(named: "no_Image")
+    }
     
     func fetchProductData() async -> NihilentAssignment.ProductResponse? {
         guard let pathString = Bundle(for: type(of: self)).path(forResource: "mock", ofType: "json") else {

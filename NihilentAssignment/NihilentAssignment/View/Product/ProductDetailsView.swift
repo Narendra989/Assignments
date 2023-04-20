@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
-    @EnvironmentObject var productViewModel: ProductListViewModel
+    @ObservedObject var productViewModel: ProductListViewModel
     let product: ProductDataViewModel
-    let imageSize: CGFloat = 200
-    @State private var image: UIImage = UIImage(named: "no_Image")!
+    private let imageSize: CGFloat = 200
+    @State private var image: UIImage! = UIImage(named: "no_Image")
     
     var body: some View {
         let price = "\(product.price)"
@@ -75,6 +75,7 @@ struct ProductDetailsView: View {
 
 struct ProductDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailsView(product: ProductDataViewModel(with: Product(citrusID: nil, title: "", id: "", imageURL: "", price: [Price(message: nil, value: 0, isOfferPrice: false)], brand: nil, badges: nil, ratingCount: 0.0, messages: nil, isAddToCartEnable: nil, addToCartButtonText: nil, isInTrolley: nil, isInWishlist: false, purchaseTypes: nil, isFindMeEnable: nil, saleUnitPrice: nil, totalReviewCount: nil, isDeliveryOnly: nil, isDirectFromSupplier: nil)))
+        
+        ProductDetailsView(productViewModel: ProductListViewModel(service: FetchProductDataService()), product: ProductDataViewModel(with: nil))
     }
 }

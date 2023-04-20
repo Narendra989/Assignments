@@ -155,6 +155,66 @@
                   endingLineNumber = "45"
                   offsetFromSymbolStart = "28">
                </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - 9a2b97d4c657a20b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - 73f0330426d5f6e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - ef67d6d3a0f8e609"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - d2d6e757a6a2d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NihilentAssignment.Product) -&gt; Swift.Optional&lt;NihilentAssignment.ProductDataViewModel&gt; in closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "28">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

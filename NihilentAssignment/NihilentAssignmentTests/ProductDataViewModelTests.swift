@@ -23,7 +23,7 @@ class ProductDataViewModelTests: XCTest {
         
         let mockService = MockFetchProductDataService()
         let response = await mockService.fetchProductData()
-        let product = response?.products.first
+        let product = response?.products?.first
         
         XCTAssertNotNil(mockService)
         XCTAssertNotNil(response)

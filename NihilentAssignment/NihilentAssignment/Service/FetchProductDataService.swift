@@ -15,7 +15,7 @@ protocol FetchProductDataServiceProtocol {
 
 class FetchProductDataService: FetchProductDataServiceProtocol {
     
-    let noImage = UIImage(named: AppConstant.noImage)!
+    private let noImage: UIImage! = UIImage(named: AppConstant.noImage)
     
     func fetchProductData() async -> ProductResponse? {
         await withCheckedContinuation { continuation in
@@ -50,7 +50,10 @@ class FetchProductDataService: FetchProductDataServiceProtocol {
         if let image = await retrieveImageFromCache(imagePath: imagePath) {
             return image
         } else {
-            let urlRequest = URLRequest(url: URL(string: imagePath)!)
+            guard let imageURL = URL(string: imagePath) else {
+                return nil
+            }
+            let urlRequest = URLRequest(url: imageURL)
             
             if let imageData = await NetworkManager.shared.loadImage(fromUrl: urlRequest) {
                 if let image = UIImage(data: imageData) {
@@ -68,7 +71,10 @@ class FetchProductDataService: FetchProductDataServiceProtocol {
     }
     
     private func retrieveImageFromCache(imagePath: String) async -> UIImage? {
-        let urlRequest = URLRequest(url: URL(string: imagePath)!)
+        guard let imageURL = URL(string: imagePath) else {
+            return nil
+        }
+        let urlRequest = URLRequest(url: imageURL)
         let image = await NetworkManager.shared.imageStorage.retrieveCachedImage(urlRequest: urlRequest)
         return image
     }

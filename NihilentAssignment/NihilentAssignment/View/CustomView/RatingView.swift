@@ -16,8 +16,8 @@ struct RatingView: View {
         }
     }
     
-    @Binding var rating: Double
-    let maxRating: Int
+    @Binding private var rating: Double
+    private let maxRating: Int
     
     init(rating: Binding<Double>, maxRating: Int) {
         self.maxRating = maxRating

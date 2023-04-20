@@ -16,12 +16,13 @@ struct ProductDataViewModel: Identifiable {
     var ratingCount: Double
     var isWhisList: Bool = false
     
-    init(with product: Product) {
-        self.id = product.id
-        self.title = product.title
-        self.imageUrl = product.imageURL
-        self.price = product.price.first?.value ?? 0.0
-        self.ratingCount = product.ratingCount
-        self.isWhisList = product.isInWishlist
+    init(with product: Product?) {
+        
+        self.id = product?.id ?? ""
+        self.title = product?.title ?? ""
+        self.imageUrl = product?.imageURL ?? ""
+        self.price = product?.price?.first?.value ?? 0.0
+        self.ratingCount = product?.ratingCount ?? 0.0
+        self.isWhisList = product?.isInWishlist ?? false
     }
 }

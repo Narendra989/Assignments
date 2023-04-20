@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ProductListView: View {
-    @EnvironmentObject var productViewModel: ProductListViewModel
-    @State var isLoading: Bool = true
+    @ObservedObject var productViewModel: ProductListViewModel
+    @State private var isLoading: Bool = true
     
     var body: some View {
         NavigationView {
             if productViewModel.products.count > 0 {
                 List(productViewModel.products) { product in
-                    NavigationLink(destination: ProductDetailsView(product: product)) {
-                        ProductListRow(product: product)
+                    NavigationLink(destination: ProductDetailsView(productViewModel: productViewModel, product: product)) {
+                        ProductListRow(productViewModel: productViewModel, product: product)
                     }
                 }
                 .navigationTitle(AppConstant.productsTabTitle)
@@ -31,6 +31,6 @@ struct ProductListView: View {
 
 struct ProductListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListView()
+        ProductListView(productViewModel: ProductListViewModel(service: FetchProductDataService()))
     }
 }

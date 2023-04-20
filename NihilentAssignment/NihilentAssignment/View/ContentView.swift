@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var productViewModel = ProductListViewModel(service: FetchProductDataService())
+    @StateObject private var productViewModel = ProductListViewModel(service: FetchProductDataService())
     var body: some View {
         TabView {
-            ProductListView()
+            ProductListView(productViewModel: productViewModel)
                 .tabItem {
                     Label(AppConstant.productsTabTitle, systemImage: AppConstant.productTabImage)
                 }
-            FavouritesView()
+            FavouritesView(productViewModel: productViewModel)
                 .tabItem {
                     Label(AppConstant.favouritesTabTitle, systemImage: AppConstant.favouriteTabImage)
                 }
@@ -23,7 +23,6 @@ struct ContentView: View {
         .onAppear {
             productViewModel.fetchProducts()
         }
-        .environmentObject(productViewModel)
     }
 }
 
