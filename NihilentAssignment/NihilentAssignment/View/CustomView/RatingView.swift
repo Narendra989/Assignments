@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RatingView: View {
     struct ClipShape: Shape {
-        let width: Double
+        fileprivate let width: Double
         
         func path(in rect: CGRect) -> Path {
             Path(CGRect(x: rect.minX, y: rect.minY, width: width, height: rect.height))

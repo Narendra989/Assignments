@@ -9,16 +9,19 @@ import SwiftUI
 
 struct ProductListRow: View {
     @ObservedObject var productViewModel: ProductListViewModel
-    let product: ProductDataViewModel
+    let product: ProductDataPresenterModel
     private let imageSize: CGFloat = 60
     @State private var image: UIImage! = UIImage(named: "no_Image")
     
     var body: some View {
-        let price = "\(product.price )"
+        let imagePath = product.imageUrl ?? ""
+        let price = String(format: "%.1f", product.price ?? 0.0)
+        let title = product.title ?? ""
+        
         HStack {
             
             if #available(iOS 15.0, *) {
-                AsyncImage(url: URL(string: product.imageUrl)) { phase in // 1
+                AsyncImage(url: URL(string: imagePath)) { phase in // 1
                     if let image = phase.image { // 2
                         // if the image is valid
                         image
@@ -40,7 +43,7 @@ struct ProductListRow: View {
             }
             
             VStack(alignment: .leading) {
-                Text(product.title)
+                Text(title)
                 Text(" $ \(price)")
             }
             Spacer()
@@ -59,7 +62,7 @@ struct ProductListRow: View {
             
         } .onAppear {
             Task {
-                image = await productViewModel.loadImage(imagePath: product.imageUrl)
+                image = await productViewModel.loadImage(imagePath: imagePath)
             }
             
         }
@@ -69,6 +72,6 @@ struct ProductListRow: View {
 
 struct ProductListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListRow(productViewModel: ProductListViewModel(service: FetchProductDataService()), product: ProductDataViewModel(with: nil))
+        ProductListRow(productViewModel: ProductListViewModel(service: FetchProductDataService()), product: ProductDataPresenterModel(with: nil))
     }
 }

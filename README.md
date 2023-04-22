@@ -17,5 +17,5 @@
 1. RequestHandlerTests
 2. FetchDataServiceTests
 3. ProductListViewModelTests
-4. ProductDataViewModelTests
+4. ProductDataPresenterModelTests
 

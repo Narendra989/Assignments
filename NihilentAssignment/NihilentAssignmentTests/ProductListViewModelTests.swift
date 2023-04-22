@@ -26,8 +26,6 @@ class ProductListViewModelTests: XCTestCase {
         
         XCTAssertEqual(sut.products.count, 0)
         XCTAssertNotNil(sut)
-        
-        
     }
 
 }
@@ -42,7 +40,7 @@ class MockProductListViewModel: ProductListViewModel {
     
     override func fetchProducts()  {
         Task {
-            self.products = await (mockService.fetchProductData()?.products?.compactMap { ProductDataViewModel(with: $0) })!
+            self.products = await (mockService.fetchProductData()?.products?.compactMap { ProductDataPresenterModel(with: $0) })!
         }
     }
 }

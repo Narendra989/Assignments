@@ -8,7 +8,7 @@
 import XCTest
 @testable import NihilentAssignment
 
-class ProductDataViewModelTests: XCTest {
+class ProductDataPresenterModelTests: XCTest {
 
     override func setUpWithError() throws {
        
@@ -29,7 +29,7 @@ class ProductDataViewModelTests: XCTest {
         XCTAssertNotNil(response)
         XCTAssertNotNil(product)
         
-        let viewModel = ProductDataViewModel(with: product!)
+        let viewModel = ProductDataPresenterModel(with: product!)
         
         XCTAssertNotNil(viewModel)
         XCTAssertEqual(viewModel.id, product?.id)

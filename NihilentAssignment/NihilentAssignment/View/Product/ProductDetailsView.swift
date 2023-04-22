@@ -9,16 +9,20 @@ import SwiftUI
 
 struct ProductDetailsView: View {
     @ObservedObject var productViewModel: ProductListViewModel
-    let product: ProductDataViewModel
+    let product: ProductDataPresenterModel
     private let imageSize: CGFloat = 200
     @State private var image: UIImage! = UIImage(named: "no_Image")
     
     var body: some View {
-        let price = "\(product.price)"
+        let imagePath = product.imageUrl ?? ""
+        let price = String(format: "%.1f", product.price ?? 0.0)
+        let title = product.title ?? ""
+        let rating = product.ratingCount ?? 0.0
+        
         VStack(alignment: .center) {
             
             if #available(iOS 15.0, *) {
-                AsyncImage(url: URL(string: product.imageUrl)) { phase in // 1
+                AsyncImage(url: URL(string: imagePath)) { phase in // 1
                     if let image = phase.image { // 2
                         // if the image is valid
                         image
@@ -43,12 +47,12 @@ struct ProductDetailsView: View {
             
             HStack() {
                 VStack(alignment: .leading) {
-                    Text(product.title)
+                    Text(title)
                         .fontWeight(.bold)
                         .font(.system(size: 22))
                     Text("$ \(price)")
                         .font(.system(size: 14))
-                    RatingView(rating: .constant(product.ratingCount), maxRating: Int(AppConstant.maxRating))
+                    RatingView(rating: .constant(rating), maxRating: Int(AppConstant.maxRating))
                 }
                 Spacer()
                 let imageName = product.isWhisList ? AppConstant.whislistProductImage : AppConstant.nonWhislistProductImage
@@ -58,16 +62,14 @@ struct ProductDetailsView: View {
                     }
                     
                 }.frame(width: 30, height: 30)
-                
-                
             }
             .padding()
             
             Spacer()
-        }.navigationTitle(product.title)
+        }.navigationTitle(title)
             .onAppear {
                 Task {
-                    image = await productViewModel.loadImage(imagePath: product.imageUrl)
+                    image = await productViewModel.loadImage(imagePath: imagePath)
                 }
             }
     }
@@ -76,6 +78,6 @@ struct ProductDetailsView: View {
 struct ProductDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         
-        ProductDetailsView(productViewModel: ProductListViewModel(service: FetchProductDataService()), product: ProductDataViewModel(with: nil))
+        ProductDetailsView(productViewModel: ProductListViewModel(service: FetchProductDataService()), product: ProductDataPresenterModel(with: nil))
     }
 }

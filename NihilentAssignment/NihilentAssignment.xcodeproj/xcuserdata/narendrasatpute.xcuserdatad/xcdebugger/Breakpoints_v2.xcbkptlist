@@ -30,8 +30,8 @@
             filePath = "NihilentAssignmentTests/ProductListViewModelTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "fetchProducts()"
             landmarkType = "7">
             <Locations>
@@ -214,6 +214,69 @@
                   startingLineNumber = "45"
                   endingLineNumber = "45"
                   offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3B21094C-2E10-4C83-BAED-B80CA1C0F113 - d2d6e757a6a2d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NihilentAssignment.Product) -&gt; Swift.Optional&lt;NihilentAssignment.ProductDataViewModel&gt; in closure #1 @Sendable () async -&gt; () in NihilentAssignmentTests.MockProductListViewModel.fetchProducts() -&gt; ()"
+                  moduleName = "NihilentAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignmentTests/ProductListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CC514F5-73D0-409C-90BB-D37BFA401834"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NihilentAssignment/View/Product/ProductListRow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3CC514F5-73D0-409C-90BB-D37BFA401834 - 4e3693f4a6db0587"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NihilentAssignment.ProductListRow.body.getter : some"
+                  moduleName = "NihilentAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignment/View/Product/ProductListRow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+               <Location
+                  uuid = "3CC514F5-73D0-409C-90BB-D37BFA401834 - 7fdf9ba8d9ecb693"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.AnyView, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Spacer, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in NihilentAssignment.ProductListRow.body.getter : some"
+                  moduleName = "NihilentAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narendrasatpute/Documents/NewAssignment/SubmissionAssignment/Assignments/NihilentAssignment/NihilentAssignment/View/Product/ProductListRow.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "314">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -25,7 +25,7 @@ struct Product: Decodable, Identifiable {
     let isAddToCartEnable: Bool?
     let addToCartButtonText: AddToCartButtonText?
     let isInTrolley: Bool?
-    var isInWishlist: Bool
+    let isInWishlist: Bool?
     let purchaseTypes: [PurchaseTypeElement]?
     let isFindMeEnable: Bool?
     let saleUnitPrice: Double?

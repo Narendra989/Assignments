@@ -11,7 +11,7 @@ import SwiftUI
 
 
 class ProductListViewModel: ObservableObject {
-    @Published var products = [ProductDataViewModel]()
+    @Published var products = [ProductDataPresenterModel]()
     private let service: FetchProductDataServiceProtocol
     
     init(service: FetchProductDataServiceProtocol) {
@@ -23,7 +23,7 @@ class ProductListViewModel: ObservableObject {
             let response = await service.fetchProductData()
             DispatchQueue.main.async {
                 if let productList = response?.products {
-                    self.products = productList.compactMap { ProductDataViewModel(with: $0) }
+                    self.products = productList.compactMap { ProductDataPresenterModel(with: $0) }
                 } 
             }
         }

@@ -25,12 +25,12 @@
 		660C963429ED95C9003600E4 /* ProductListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C963329ED95C9003600E4 /* ProductListRow.swift */; };
 		660C963629EDA6BB003600E4 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C963529EDA6BB003600E4 /* ProductDetailsView.swift */; };
 		660C963829EDAFBF003600E4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C963729EDAFBF003600E4 /* RatingView.swift */; };
-		660C963D29EDCE47003600E4 /* ProductDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C963C29EDCE47003600E4 /* ProductDataViewModel.swift */; };
+		660C963D29EDCE47003600E4 /* ProductDataPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C963C29EDCE47003600E4 /* ProductDataPresenterModel.swift */; };
 		660C964329EDD3DD003600E4 /* RequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964229EDD3DD003600E4 /* RequestHandlerTests.swift */; };
 		660C964529EDD489003600E4 /* FetchDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964429EDD489003600E4 /* FetchDataServiceTests.swift */; };
 		660C964729EDD5BD003600E4 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 660C964629EDD5BD003600E4 /* mock.json */; };
 		660C964929EDD9D8003600E4 /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964829EDD9D8003600E4 /* ProductListViewModelTests.swift */; };
-		660C964B29EDDFA2003600E4 /* ProductDataViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964A29EDDFA2003600E4 /* ProductDataViewModelTests.swift */; };
+		660C964B29EDDFA2003600E4 /* ProductDataPresenterModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964A29EDDFA2003600E4 /* ProductDataPresenterModelTests.swift */; };
 		660C964D29EE66B8003600E4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C964C29EE66B8003600E4 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,12 +73,12 @@
 		660C963329ED95C9003600E4 /* ProductListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRow.swift; sourceTree = "<group>"; };
 		660C963529EDA6BB003600E4 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		660C963729EDAFBF003600E4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		660C963C29EDCE47003600E4 /* ProductDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataViewModel.swift; sourceTree = "<group>"; };
+		660C963C29EDCE47003600E4 /* ProductDataPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataPresenterModel.swift; sourceTree = "<group>"; };
 		660C964229EDD3DD003600E4 /* RequestHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandlerTests.swift; sourceTree = "<group>"; };
 		660C964429EDD489003600E4 /* FetchDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataServiceTests.swift; sourceTree = "<group>"; };
 		660C964629EDD5BD003600E4 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		660C964829EDD9D8003600E4 /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
-		660C964A29EDDFA2003600E4 /* ProductDataViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataViewModelTests.swift; sourceTree = "<group>"; };
+		660C964A29EDDFA2003600E4 /* ProductDataPresenterModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataPresenterModelTests.swift; sourceTree = "<group>"; };
 		660C964C29EE66B8003600E4 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +158,7 @@
 				660C964229EDD3DD003600E4 /* RequestHandlerTests.swift */,
 				660C964429EDD489003600E4 /* FetchDataServiceTests.swift */,
 				660C964829EDD9D8003600E4 /* ProductListViewModelTests.swift */,
-				660C964A29EDDFA2003600E4 /* ProductDataViewModelTests.swift */,
+				660C964A29EDDFA2003600E4 /* ProductDataPresenterModelTests.swift */,
 			);
 			path = NihilentAssignmentTests;
 			sourceTree = "<group>";
@@ -198,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				660C962429ED86CE003600E4 /* ProductsDataModel.swift */,
+				660C963C29EDCE47003600E4 /* ProductDataPresenterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				660C963129ED8C29003600E4 /* ProductListViewModel.swift */,
-				660C963C29EDCE47003600E4 /* ProductDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -383,7 +383,7 @@
 				660C95F729ED8141003600E4 /* ContentView.swift in Sources */,
 				660C962129ED82C8003600E4 /* FavouritesView.swift in Sources */,
 				660C962C29ED8751003600E4 /* NetworkManager.swift in Sources */,
-				660C963D29EDCE47003600E4 /* ProductDataViewModel.swift in Sources */,
+				660C963D29EDCE47003600E4 /* ProductDataPresenterModel.swift in Sources */,
 				660C963029ED8881003600E4 /* FetchProductDataService.swift in Sources */,
 				660C962E29ED8751003600E4 /* RequestHandler.swift in Sources */,
 				660C963429ED95C9003600E4 /* ProductListRow.swift in Sources */,
@@ -401,7 +401,7 @@
 				660C964329EDD3DD003600E4 /* RequestHandlerTests.swift in Sources */,
 				660C960629ED8143003600E4 /* NihilentAssignmentTests.swift in Sources */,
 				660C964929EDD9D8003600E4 /* ProductListViewModelTests.swift in Sources */,
-				660C964B29EDDFA2003600E4 /* ProductDataViewModelTests.swift in Sources */,
+				660C964B29EDDFA2003600E4 /* ProductDataPresenterModelTests.swift in Sources */,
 				660C964529EDD489003600E4 /* FetchDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
